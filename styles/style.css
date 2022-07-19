@@ -1,0 +1,75 @@
+﻿@font-face {
+    font-family: "vazir";
+    src: url("../fonts/vazir.eot") format("eot"), url("../fonts/vazir.ttf") format("truetype"), url("../fonts/vazir.woff") format("woff"), url("../fonts/vazir.woff2") format("woff2");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "vazir";
+    overflow-x: hidden;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.thumbnail-slider {
+    width: 100%;
+    float: left;
+    overflow: hidden;
+}
+
+.thumbnail-slider .thumbnail-container {
+    width: 100%;
+    float: left;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.thumbnail-slider .thumbnail-container .item {
+    height: 250px;
+    background: #999;
+    line-height: 250px;
+    text-align: center;
+    color: #fff;
+    float: left;
+    font-size: 50px;
+}
+
+.thumbnail-slider .thumbnail-container .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.thumbnail-slider .controls {
+    width: 100%;
+    display: flex;
+}
+
+.thumbnail-slider .controls ul {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+.thumbnail-slider .controls ul li {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #e3e3e3;
+    display: inline-block;
+    line-height: 35px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.thumbnail-slider .controls ul li.active {
+    background: crimson;
+    color: #fff;
+}
